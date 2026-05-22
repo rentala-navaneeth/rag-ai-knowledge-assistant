@@ -1,0 +1,5 @@
+Self-attention allows models to weigh the importance of different tokens.
+
+It is the core mechanism behind transformer models.
+
+It enables capturing long-range dependencies in sequences.

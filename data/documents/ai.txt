@@ -1,0 +1,5 @@
+Transformers are deep learning models used in natural language processing.
+
+They use self-attention mechanisms to understand relationships between words.
+
+Unlike RNNs, transformers process data in parallel, making them faster and more scalable.

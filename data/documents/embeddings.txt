@@ -1,0 +1,5 @@
+Embeddings are dense vector representations of text.
+
+They capture semantic meaning and allow similarity comparison.
+
+Sentence-transformers are commonly used for generating embeddings.

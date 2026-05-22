@@ -1,0 +1,5 @@
+FAISS is a library for efficient similarity search.
+
+It enables fast nearest neighbor retrieval using vector embeddings.
+
+It is widely used in RAG systems.

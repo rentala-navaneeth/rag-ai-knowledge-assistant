@@ -1,0 +1,5 @@
+Transformers are deep learning models designed for sequence modeling tasks such as NLP.
+
+They use self-attention mechanisms to capture relationships between tokens.
+
+Popular models include BERT, GPT, and T5.
