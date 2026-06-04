@@ -1,7 +1,6 @@
 from sentence_transformers import SentenceTransformer
 from config import EMBEDDING_MODEL
 
-# Global model (initialized once)
 _model = None
 
 
