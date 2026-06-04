@@ -15,7 +15,6 @@ class LLMClient:
             "temperature": temperature
         }
 
-        # 🔥 REQUIRED for ngrok (prevents HTML warning page)
         headers = {
             "ngrok-skip-browser-warning": "true"
         }
@@ -31,7 +30,6 @@ class LLMClient:
                 timeout=30
             )
 
-            # Check HTTP status
             if response.status_code != 200:
                 logger.error(f"LLM API returned status {response.status_code}")
                 return {
@@ -39,7 +37,6 @@ class LLMClient:
                     "confidence": "low"
                 }
 
-            # Try parsing JSON response
             try:
                 data = response.json()
             except Exception:
@@ -51,7 +48,6 @@ class LLMClient:
 
             raw_output = data.get("output", "")
 
-            # Parse structured output
             return self.parse_output(raw_output)
 
         except requests.exceptions.Timeout:
